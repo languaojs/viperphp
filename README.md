@@ -9,6 +9,7 @@ Install ViperPHP using Composer:
 ```bash
 composer create-project languaojs/viperphp your-app-name
 ```
+Then, go to ```config/Config.php``` and set your base URL (e.g., http://localhost/your-app-name). Run XAMPP or WAMP, the go to your app URL.
 ## 🛠 Getting Started
 ### 1. The Home Page
 To edit the main landing page, go to:
@@ -60,5 +61,6 @@ Use the ```get_media($path)``` helper function to generate the correct URL. This
 Example Usage:
 ```HTML
 <!-- To get an image named code2.png -->
-<img src="<?php echo get_media('code2.png'); ?>" alt="My Image">
+<img src="<?= get_media('code2.png'); ?>" alt="My Image">
 ```
+[How to set assets in the controller](public/media/code2.png)
