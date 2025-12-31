@@ -1,0 +1,18 @@
+<?php
+
+require_once __DIR__ . '/vendor/autoload.php';
+
+use System\Console\Kernel;
+use System\Console\Commands\MakeController;
+use System\Console\Commands\MakeModel;
+
+// 1. Initialize Kernel
+$kernel = new Kernel();
+
+// 2. Register your commands
+$kernel->registerCommand(new MakeController());
+$kernel->registerCommand(new MakeModel());
+// You can add more here: $kernel->registerCommand(new MakeModel());
+
+// 3. Let the kernel handle the terminal input
+$kernel->handle($argv);
