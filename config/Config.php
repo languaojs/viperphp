@@ -13,7 +13,7 @@ class Config
     protected const APP_EDIT = true;
 
     //Local Server Database Configuration
-    protected const LOCAL_URL = "http://localhost/viper";
+    protected const LOCAL_URL = "http://localhost/viperphp";
     protected const LOCAL_DB_HOST = "localhost";
     protected const LOCAL_DB_USER = "root";
     protected const LOCAL_DB_PASS = "";
