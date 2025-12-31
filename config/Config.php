@@ -17,7 +17,7 @@ class Config
     protected const LOCAL_DB_HOST = "localhost";
     protected const LOCAL_DB_USER = "root";
     protected const LOCAL_DB_PASS = "";
-    protected const LOCAL_DB_NAME = "siakad";
+    protected const LOCAL_DB_NAME = "";
     
     //Global Server Database Configuration
     protected const BASE_URL = "";
