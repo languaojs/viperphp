@@ -7,8 +7,9 @@ ViperPHP is a lightweight, easy-to-use, and secure PHP framework designed for ra
 Install ViperPHP using Composer:
 
 ```bash
-composer create-project languaojs/viperphp
+composer create-project languaojs/viperphp your-app-name
 ```
+Then, go to ```config/Config.php``` and set your base URL (e.g., http://localhost/your-app-name). Run XAMPP or WAMP, the go to your app URL.
 ## 🛠 Getting Started
 ### 1. The Home Page
 To edit the main landing page, go to:
