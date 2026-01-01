@@ -6,11 +6,10 @@
  */
 require_once '../vendor/autoload.php';
 
-/**
- * 2. Load Configuration & Environment Settings
- * This sets our constants (BASE_URL) and error reporting levels.
- */
-require_once '../config/config.php';
+use Config\Config;
+
+$environment = Config::getEnvironment();
+
 
 /**
  * 3. Start Session (Optional but recommended)
@@ -29,7 +28,7 @@ try {
     // Initialize the Core Library (The Router)
     $init = new System\Router();
 } catch (\Exception $e) {
-    if (ENVIRONMENT === 'development') {
+    if ($environment === 'development') {
         echo '<b>Framework Error:</b> ' . $e->getMessage();
     } else {
         // In production, log it and show a generic 500 page

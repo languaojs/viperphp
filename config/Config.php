@@ -125,4 +125,8 @@ class Config
     public static function get_key(string $key){
         return self::KEYS[$key];
     }
+
+    public static function getEnvironment() {
+        return self::APP_EDIT ? 'development' : 'production';
+    }
 }
