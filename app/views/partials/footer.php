@@ -1,7 +1,7 @@
 <?php 
 use Config\Config;
 use App\Libraries\Assets;
-$footer_js = Assets::loadJsAssets($pdata['assets']['source'], $pdata['assets']['footer_js']);;
+$footer_js = Assets::loadJsAssets($pdata['assets']['source'], $pdata['assets']['footer_js']);
 ?>
 <!-- View ends here -->
 <footer class="footer">
