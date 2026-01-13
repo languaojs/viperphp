@@ -1,4 +1,4 @@
-# ViperPHP Framework `v0.1.3`
+# ViperPHP Framework `v0.1.4`
 
 ViperPHP is a lightweight, easy-to-use, and secure PHP framework designed for rapid development. It features a clean structure, a built-in CLI tool, and a flexible asset management system.
 
