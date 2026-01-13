@@ -22,17 +22,17 @@ Then, go to ```config/Config.php``` and set your base URL (e.g., http://localhos
 ### 1. The Home Page
 To edit the main landing page, go to:
 ```
-app/views/home/index.php
+app/Views/home/index.php
 ```
 ### 2. The Navigation Menu
 To edit the global navbar, go to:
 ```
-app/views/partials/home-menu.php
+app/Views/partials/home-menu.php
 ```
 ### 3. Configuration
 To set your App Name, Security Keys, or Database Credentials, open:
 ```
-config/config.php
+config/Config.php
 ```
 ## 📄 Creating a New Page
 To create a new page (e.g., About), follow these steps:
@@ -41,12 +41,12 @@ Open your terminal and type:
 ```bash
 php craft make:controller About
 ```
-Alternatively, manually create ```app/controllers/About.php```.
+Alternatively, manually create ```app/Controllers/About.php```.
 ### 2. Set up the logic
 Inside your new controller, ensure you have an ```index()``` method. You can copy the structure from ```Home.php```.
 ### 3. Create the view
-* Create a folder: ```app/views/about/```
-* Create a file: ```app/views/about/index.php```
+* Create a folder: ```app/Views/about/```
+* Create a file: ```app/Views/about/index.php```
 ### 4. Connect Controller to a view
 In your About.php controller, update the view call:
 ```PHP
