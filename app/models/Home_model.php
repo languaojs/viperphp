@@ -10,10 +10,18 @@ use System\Database;
 
 class Home_model
 {
-    private $con;
-    public function __construct()
-    {
-        $this->con = new Database();
-    }
 
+    /***
+     * Database connection can only be made if all database credentials are provided
+     */
+
+    // private $con;
+    // public function __construct()
+    // {
+    //     $this->con = new Database();
+    // }
+
+    public function sayHello(){
+        return "Hello, there!";
+    }
 }

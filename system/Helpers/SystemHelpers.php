@@ -8,6 +8,8 @@ use System\Libraries\Flasher;
  * @param string $path (optional)
  * @return string base_url and path
  */
+
+
 function base_url($path = '') {
     return Config::getBaseUrl() . ltrim($path, '/');
 }
@@ -61,4 +63,3 @@ function dd($data) {
     print_r($data);
     echo "</pre>";
 }
-

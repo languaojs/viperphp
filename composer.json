@@ -19,8 +19,8 @@
             "Config\\": "config/"
         },
         "files": [
-            "system/Helpers/common.php",
-            "app/helpers/common.php"
+            "system/Helpers/SystemHelpers.php",
+            "app/Helpers/AppHelpers.php"
         ]
     }
 }

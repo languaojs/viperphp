@@ -72,3 +72,10 @@ Example Usage:
 <img src="<?= get_media('code2.png'); ?>" alt="My Image">
 ```
 [How to set assets in the controller](public/media/code2.png)
+
+## Classes and Files naming conventions
+As usual, the class name and the file name must be identical. So, if the class is ```Home_model```, the file name must be ```Home_model.php```. This also applies to the Controllers. For instance, the Controller class ```User``` must have the file name ```User.php```. For Controllers and Models, avoid using PascalCase, though it is typical. If you want to use PascalCase, you can modify the Router and Controller classes, which are located in the system directory.
+
+Classes in the Libraries directory, both in the system and app directories, can use PascalCase.
+
+The methods and functions can be written using PascalCase() or underscored_pattern().

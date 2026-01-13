@@ -1,6 +1,7 @@
 <?php 
 
 namespace System\Libraries;
+
 if (basename($_SERVER['PHP_SELF']) == 'Hasher.php') {
     exit("Direct access to this file is not allowed.");
 }
@@ -54,7 +55,4 @@ class Hasher {
 
         return $uuid;
     }
-    
-
-
 }
